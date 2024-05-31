@@ -10,22 +10,22 @@ body, html {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "sub-header sub-header ."
+        "sub-header sub-header sub-header"
         "text text sidebar"
         "sub-footer sub-footer sub-footer";
     grid-template-rows: auto;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px;
-    width: 60%;
+    width: 80%; /* Increase width to make it wider */
     margin: 0 auto;
 }
 
 .header {
     grid-area: header;
-    background: url('Assets/blender.jpg') no-repeat center center;
+    background: url('assets/blender.jpg') no-repeat center center;
     background-size: cover;
-    height: 150px;
+    height: 200px; /* Increase height for better visibility */
 }
 
 .sub-header {
