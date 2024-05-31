@@ -6,24 +6,25 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.header {
-    background: url('assets/blender.jpg') no-repeat center center;
-    background-size: cover;
-    height: 250px; /* Adjust height as needed */
-    width: 100%;
-}
-
 .container {
     display: grid;
     grid-template-areas: 
+        "header header header"
         "sub-header sub-header sub-header"
         "text text sidebar"
         "sub-footer sub-footer sub-footer";
     grid-template-rows: auto;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+    background: url('assets/blender.jpg') no-repeat center center;
+    background-size: cover;
+    height: 250px; /* Increase height for better visibility */
 }
 
 .sub-header {
