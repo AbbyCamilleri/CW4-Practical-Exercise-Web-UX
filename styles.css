@@ -13,11 +13,11 @@ body, html {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "sub-header sub-header sub-header"
+        "sub-header sub-header ."
         "text text sidebar"
         "sub-footer sub-footer sub-footer";
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     gap: 10px;
     padding: 20px;
     width: 60%;
@@ -26,7 +26,7 @@ body, html {
 .header {
     grid-area: header;
     background: red;
-    height: 100px;
+    height: 150px;
 }
 
 .sub-header {
