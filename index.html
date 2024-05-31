@@ -1,27 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout with Google Fonts</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Jost?preview.text=What%20is%20Blender%3F" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="header"></div>
-        <div class="sub-header">
-            <span class="sub-header-text">What is blender?</span>
-        </div>
-        <div class="text-with-sidebar">
-            <div class="text"></div>
-            <div class="sidebar"></div>
-        </div>
-        <div class="sub-footer">
-            <div class="sub-footer-item"></div>
-            <div class="sub-footer-item"></div>
-            <div class="sub-footer-item"></div>
-        </div>
-    </div>
+
+    <header>
+        <!-- This is the Logo -->
+        <img id="logo" src="Assets/blender.jpg" alt="blender logo">
+    </header>
+
+
+    <main>
+
+        <section id="ImageSubTitle">
+            <!-- This is the title on top of the Big paragraph -->
+            <p>What is Blender?</p>
+        </section>
+
+        <section id="ImageText">
+            <!-- This is the big text on the left -->
+            <p id="ImageTextAlign">Blender is a powerful open-source software suite designed for 3D modeling, animation,
+                rendering, simulation, and game creation. Widely utilized by artists, designers, and developers across
+                various industries such as animation, visual effects, game development, and 3D printing, Blender offers
+                a comprehensive set of tools for creating and editing 3D models, including sculpting, texturing, and UV
+                mapping. Its advanced animation capabilities enable users to craft complex animations through character
+                rigging, keyframe animation, and motion capture integration. Blender's robust rendering engines, Cycles
+                and Eevee, deliver high-quality, realistic renderings of 3D scenes. Additionally, Blender supports a
+                variety of simulations like fluid, smoke, fire, cloth, and rigid body dynamics, enhancing its
+                versatility.
+                <br>
+                <br>
+                Beyond its 3D capabilities, Blender includes a built-in video sequence editor for performing video
+                editing tasks such as cutting, splicing, and adding effects. Although the built-in game engine has been
+                discontinued, Blender remains a vital tool for developing game assets and environments. The software's
+                extensibility through its Python API allows users to automate tasks and create custom tools and add-ons,
+                fostering a highly customizable user experience. Blender is freely available and compatible with
+                multiple operating systems, including Windows, macOS, and Linux. Its strong community support and the
+                abundance of tutorials, plugins, and resources contribute to Blender's reputation as a versatile and
+                robust tool in the world of 3D creation.
+
+
+
+
+
+
+
+            </p>
+
+        </section>
+
+        <section id="animationImage">
+            <!-- This is the animation image on the right -->
+
+            <img id="resizeImage" src="Assets/animation01-1280x720.jpg" alt="animation picture">
+
+        </section>
+
+        <section id="BodySection">
+
+            <section class="generalSection" id="Para1">
+                <!-- Paragraph one (bottom left) -->
+                <h1>Sculpting</h1>
+
+                <p class = "textfont">
+            
+
+                Sculpting in Blender is akin to working with digital clay, enabling artists to create detailed, organic
+                shapes. The dynamic topology feature adjusts the mesh as you sculpt, adding or reducing detail as
+                needed, while the multiresolution modifier allows for multi-level sculpting. Blender offers a variety of
+                customizable brushes and additional tools like masking, symmetry, and remeshing, which streamline the
+                sculpting workflow and help achieve intricate details. Texture painting tools integrated with sculpting
+                allow for adding color and detail directly onto the model, providing a seamless creative process.
+                <br>
+                <a href="https://www.blender.org/features/sculpting/">More information:</a>
+                </p>
+            </section>
+
+            <section class="generalSection" id="Para2">
+                <!-- Paragraph two (bottom middle) -->
+                <h1>Rendering</h1>
+
+                <p class = "textfont">
+                Rendering in Blender is powered by two main engines: Cycles and Eevee. Cycles is a physically-based path
+                tracer that produces highly realistic images by simulating light behavior, making it ideal for achieving
+                lifelike results. Eevee, on the other hand, is a real-time render engine that provides high-quality
+                visuals with faster rendering times, suitable for interactive previews and real-time applications.
+                Blender's node-based shader editor and comprehensive lighting tools further enhance the rendering
+                process, allowing for the creation of complex materials and realistic lighting effects.
+                <a href="https://www.blender.org/features/rendering/">More information:</a>
+                </p>
+
+            </section>
+
+            <section class="generalSection" id="Para3">
+                <!-- Paragraph three (bottom right) -->
+                <h1>Modeling</h1>
+
+                <p class = "textfont">
+
+                Blender excels in 3D modeling, rendering, and
+                 sculpting, making it a versatile tool for artists and developers. In modeling, Blender offers mesh
+                modeling, which involves creating objects from vertices, edges, and faces, and modifiers that allow
+                non-destructive editing for tasks like smoothing and deformation. It also supports NURBS and curves for
+                creating smooth, mathematically defined shapes, and procedural modeling for generating complex patterns
+                and textures. UV mapping tools help in accurately applying textures to 3D models.
+                <a href="https://www.blender.org/features/modeling/">More information:</a>
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- The footer :> -->
+        <p>&copy; Abigail Camilleri 2024</p>
+    </footer>
 </body>
+
 </html>
