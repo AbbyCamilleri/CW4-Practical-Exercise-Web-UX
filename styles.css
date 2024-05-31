@@ -1,30 +1,33 @@
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
+    background-color: #212121;
 }
 
 .container {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "sub-header sub-header sub-header"
+        "sub-header sub-header ."
         "text text sidebar"
         "sub-footer sub-footer sub-footer";
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     gap: 10px;
-    width: 100%;
-    margin: 0;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .header {
     grid-area: header;
     background: url('assets/blender.jpg') no-repeat center center;
     background-size: cover;
-    height: 250px; /* Increase height for better visibility */
+    height: 150px;
 }
 
 .sub-header {
