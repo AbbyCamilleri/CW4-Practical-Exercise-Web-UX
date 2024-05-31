@@ -23,7 +23,7 @@ body, html {
 
 .header {
     grid-area: header;
-    background: url(blender.jpg) no-repeat center center;
+    background: url('Assets/blender.jpg') no-repeat center center;
     background-size: cover;
     height: 150px;
 }
