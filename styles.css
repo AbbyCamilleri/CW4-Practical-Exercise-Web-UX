@@ -1,10 +1,9 @@
-
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     background-color: #212121;
 }
 
@@ -32,8 +31,17 @@ body, html {
 
 .sub-header {
     grid-area: sub-header;
-    background: purple;
+    background: #212121;
     height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-header-text {
+    color: white;
+    font-size: 20px;
 }
 
 .text-with-sidebar {
