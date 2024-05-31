@@ -61,7 +61,8 @@ body, html {
 }
 
 .sidebar {
-    background: red;
+    background: url('assets/animation01-1280x720.png') no-repeat center center;
+    background-size: cover;
     height: 200px;
 }
 
