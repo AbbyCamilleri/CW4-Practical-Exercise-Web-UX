@@ -63,7 +63,8 @@ body, html {
 .sidebar {
     background: url('assets/animation01-1280x720.jpg') no-repeat center center;
     background-size: cover;
-    height: 400px;
+    width: 20%;
+    height: 300px;
 }
 
 .sub-footer {
