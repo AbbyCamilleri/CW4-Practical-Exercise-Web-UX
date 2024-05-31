@@ -37,12 +37,15 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .sub-header-text {
     color: white;
     font-size: 20px;
-    margin: 0; /* Ensure no additional margin */
+    z-index: 1; /* Ensure text is above the background */
+    background-color: #212121; /* Match the background to blend */
+    padding: 0 10px; /* Add padding for readability */
 }
 
 .text-with-sidebar {
